@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a87a7a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    box-shadow: 0 10 10px rgba(172, 17, 17, 0.3);
+}
+
+nav {
+    background-color: #f8f9fa;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    animation: nav-link-hover 0.5s ease-in-out;
+}
+
+@keyframes nav-link-hover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#city {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#söök {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+#söök:hover {
+    background-color: #3e8e41;
+}
+
+#väder {
+    margin: 30px 0;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+    #city {
+        width: 80%;
+    }
+    #söök {
+        width: 30%;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+    #city {
+        width: 80%;
+    }
+    #söök {
+        width: 40%;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
